@@ -21,7 +21,7 @@ namespace Strings_and_collections
                     foreach (string File in array1)
                     {
                         string str = string.Empty;
-                        using (System.IO.StreamReader reader = System.IO.File.OpenText(File))
+                        using (StreamReader reader = System.IO.File.OpenText(File))
                         {
                             str = reader.ReadToEnd();
                         }
